@@ -1,0 +1,33 @@
+cff-version: 1.0.0
+title: Multi-Qubit Gates by Dynamical Decoupling of Central Qubit Performed with IBMQ and 15NV Center in Diamond
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lucas
+    email: lucas.tsunaki@helmholtz-berlin.de
+    affiliation: Helmholtz Zentrum Berlin für Materialien und Energie GmbH
+    family-names: Tsunaki
+    orcid: 'https://orcid.org/0009-0003-3534-6300'
+  - given-names: Michael
+    email: michael.dotan@helmholtz-berlin.de
+    affiliation: Helmholtz Zentrum Berlin für Materialien und Energie GmbH
+    family-names: Dotan
+    orcid: 'https://orcid.org/0009-0005-8690-3394'
+  - given-names: Kseniia
+    email: kseniia.volkova@helmholtz-berlin.de
+    affiliation: Helmholtz Zentrum Berlin für Materialien und Energie GmbH
+    family-names: Volvoka
+    orcid: 'https://orcid.org/0009-0000-7258-8921'
+  - given-names: Boris
+    email: boris.naydenov@helmholtz-berlin.de
+    affiliation: Helmholtz Zentrum Berlin für Materialien und Energie GmbH
+    family-names: Naydenov
+    orcid: 'https://orcid.org/0000-0002-5215-3880'
+identifiers:
+  - type: doi
+    value:
+repository-code: 'h'
+license: GPL-3.0
+version: '1.0'

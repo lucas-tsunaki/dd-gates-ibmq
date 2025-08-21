@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "DD-gates"
+version = "1.0.0"
+description = "Multi-Qubit Gates by Dynamical Decoupling of Central Qubit Performed with IBMQ"
+readme = "README.md"
+
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+
+requires-python = ">=3.9"
+
+authors = [
+    { name = "Lucas Tsunaki", email = "lucastsunaki@hotmail.com" },
+]
+
+maintainers = [
+    { name = "Lucas Tsunaki", email = "lucas.tsunaki@hotmail.com" },
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "qiskit==2.1.0",
+    "qiskit-aer==0.17.1",
+    "qiskit-ibm-runtime==0.40.1"
+]
+
+classifiers = [
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Quantum Computing",
+]
+
+[project.urls]
+Repository = ""
+"Arxiv Reference" = ""
+
+[tool.hatch.version]
+path = "dd_gates/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "./dd_gates",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "dd_gates"
+]
+exclude =[
+    "examples"
+]
