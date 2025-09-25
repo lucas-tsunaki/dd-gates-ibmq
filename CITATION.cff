@@ -1,12 +1,12 @@
 cff-version: 1.0.0
-title: Multi-Qubit Gates by Dynamical Decoupling of Central Qubit Performed with IBMQ and 15NV Center in Diamond
+title: Multi-Qubit Gates by Dynamical Decoupling Implemented with IBMQ and 15NV Center in Diamond
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
 authors:
   - given-names: Lucas
-    email: lucas.tsunaki@helmholtz-berlin.de
+    email: lucastsunaki@hotmail.com
     affiliation: Helmholtz Zentrum Berlin für Materialien und Energie GmbH
     family-names: Tsunaki
     orcid: 'https://orcid.org/0009-0003-3534-6300'
@@ -30,4 +30,4 @@ identifiers:
     value:
 repository-code: 'h'
 license: GPL-3.0
-version: '1.0'
+version: '1.0.0'

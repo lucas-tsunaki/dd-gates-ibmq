@@ -1,6 +1,7 @@
 ##########
 #  Imports
 import numpy as np
+from typing import Optional
 
 from qiskit import QuantumCircuit
 from qiskit.circuit.library import PauliEvolutionGate
@@ -13,10 +14,14 @@ X = SparsePauliOp("X")
 Z = SparsePauliOp("Z")
 Id = SparsePauliOp("I")
 
-#######################
-# Functions Definitions
+######################
+# Function Definitions
 
-def _calculate_H0(w00 : float, w01 : float, Axz : float) -> SparsePauliOp:
+def _calculate_H0(
+        w00 : float,
+        w01 : float,
+        Axz : float
+        ) -> SparsePauliOp:
     """
     Calculates the time-independent Hamiltonian H0 for the provided parameters
 
@@ -37,7 +42,12 @@ def _calculate_H0(w00 : float, w01 : float, Axz : float) -> SparsePauliOp:
     H0 = w00/2*(Z ^ Id) + w01/2*(Id ^ Z) + Axz/4*(Z ^ X)
     return 2*np.pi*H0
 
-def _calculate_H1(t : float, wp : float, w1 : float, phi : float)  -> SparsePauliOp:
+def _calculate_H1(
+        t : float,
+        wp : float,
+        w1 : float,
+        phi : float
+        )  -> SparsePauliOp:
     """
     Calculates the time-dependent Hamiltonian H1(t) during a pulse for the provided parameters
 
@@ -106,8 +116,8 @@ def CPMG(
         Axz : float,
         w1 : float,
         dt : float,
-        wp=None,
-        tpi=None
+        wp : Optional[float] = None,
+        tpi : Optional[float] = None
         ) -> QuantumCircuit:
     """
     Performs a CPMG sequences with the provided parameters by calling _append_pulse and Pauli evolution gates for the free evolutions.
@@ -115,6 +125,8 @@ def CPMG(
 
     Parameters
     ----------
+    tau : float
+        Pulse spacing
     N : int
         Number of pulses in the sequence
     w00 : float
@@ -194,8 +206,8 @@ def XYN(
         Axz : float,
         w1 : float,
         dt : float,
-        wp = None,
-        tpi=None
+        wp : Optional[float] = None,
+        tpi : Optional[float] = None
         ) -> QuantumCircuit:
     """
     Performs a XYN sequences with the provided parameters by calling _append_pulse and Pauli evolution gates for the free evolutions
@@ -203,6 +215,8 @@ def XYN(
 
     Parameters
     ----------
+    tau : float
+        Pulse spacing
     N : int
         Number of pulses in the sequence
     w00 : float
