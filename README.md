@@ -1,6 +1,6 @@
 # Multi-Qubit Gates by Dynamical Decoupling Implemented with IBMQ
 
-This repository contains the basic functions for executing the DD-gate with IBMQ and simulating them with Qiskit, as presented in 'Quantum Gates via Dynamical Decoupling of Central Qubit on IBMQ and 15NV Center in Diamond' by L. Tsunaki et al., available at: [arXiv:2508.22107](https://arxiv.org/abs/2509.22107).
+This repository contains the basic functions for executing the DD-gate with IBMQ and simulating them with Qiskit, as presented in 'Quantum gates via dynamical decoupling of a central qubit on IBMQ and 15N-vacancy centers in diamond' by L. Tsunaki et al., available at: [Physical Review A: 10.1103/6st7-qh12](https://journals.aps.org/pra/abstract/10.1103/6st7-qh12).
 
 The functions for generating the CPMG and XYN sequences within Qiskit SDK framework are provided at the [dd_gates.core](https://github.com/lucas-tsunaki/dd-gates-ibmq/blob/main/dd_gates/core.py) module, which can be used to obtain all the results presented in the paper.
 The [examples](https://github.com/lucas-tsunaki/dd-gates-ibmq/tree/main/examples) folder provides an example on how to simulate an CPMG-10 sequence with Qiskit Aer and another on how to experimentally execute it on IBMQ hardware, as in Figure 1 (c) of the paper.

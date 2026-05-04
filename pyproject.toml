@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "DD-gates"
 version = "1.0.0"
-description = "Multi-Qubit Gates by Dynamical Decoupling of Central Qubit Performed with IBMQ"
+description = "Quantum gates via dynamical decoupling of a central qubit on IBMQ and 15N-vacancy centers in diamond"
 readme = "README.md"
 
 license = "GPL-3.0-or-later"
@@ -14,11 +14,11 @@ license-files = ["LICENSE"]
 requires-python = ">=3.9"
 
 authors = [
-    { name = "Lucas Tsunaki", email = "lucastsunaki@hotmail.com" },
+    { name = "Lucas Tsunaki", email = "tsunakilucas@gmail.com" },
 ]
 
 maintainers = [
-    { name = "Lucas Tsunaki", email = "lucas.tsunaki@hotmail.com" },
+    { name = "Lucas Tsunaki", email = "tsunakilucas@gmail.com" },
 ]
 
 dependencies = [
@@ -37,10 +37,6 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
     "Topic :: Scientific/Engineering :: Quantum Computing",
 ]
-
-[project.urls]
-Repository = ""
-"Arxiv Reference" = ""
 
 [tool.hatch.version]
 path = "dd_gates/__init__.py"
