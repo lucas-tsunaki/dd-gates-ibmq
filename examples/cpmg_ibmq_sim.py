@@ -1,3 +1,8 @@
+"""
+Example of Aer simulation of CPMG sequence with IBMQ as used in
+'Quantum gates via dynamical decoupling of a central qubit on IBMQ and 15N-vacancy centers in diamond' by L. Tsunaki et al., available at: Physical Review A: 10.1103/6st7-qh12.
+"""
+
 ##########
 #  Imports
 import numpy as np

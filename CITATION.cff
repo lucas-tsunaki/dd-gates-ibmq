@@ -27,7 +27,7 @@ authors:
     orcid: 'https://orcid.org/0000-0002-5215-3880'
 identifiers:
   - type: doi
-    value:
+    value: 10.1103/6st7-qh12
 repository-code: 'h'
 license: GPL-3.0
 version: '1.0.0'

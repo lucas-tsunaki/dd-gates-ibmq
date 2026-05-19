@@ -1,3 +1,8 @@
+"""
+Core functions from dd_gates package used in
+'Quantum gates via dynamical decoupling of a central qubit on IBMQ and 15N-vacancy centers in diamond' by L. Tsunaki et al., available at: Physical Review A: 10.1103/6st7-qh12.
+"""
+
 ##########
 #  Imports
 import numpy as np
@@ -7,6 +12,8 @@ from qiskit import QuantumCircuit
 from qiskit.circuit.library import PauliEvolutionGate
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.synthesis import LieTrotter
+
+__all__ = ['_calculate_H0', '_calculate_H1', '_append_pulse', 'CPMG', 'XYN']
 
 ##########################
 # Constant Pauli Operators
